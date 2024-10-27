@@ -1,5 +1,6 @@
 configuration {
-  modes: [ combi ];
-  combi-modes: [ window, drun, run ];
+  modi: "window,drun,ssh,combi";
+  font: "hack 10";
+  combi-modi: "window,drun,ssh";
 }
-@theme "gruvbox-light"
+@theme "rounded-nord-dark"

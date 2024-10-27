@@ -21,6 +21,7 @@
 - firefox - needed to download normal browser
 - Arch specific: yay
 - Arch specific: yay -S google-chrome
+- Arch specific: yay -S visual-studio-code-bin
 
 ## How to
 
@@ -70,7 +71,17 @@ configuration {
 ```
 where you can change theme
 
-Themes can be found at https://github.com/newmanls/rofi-themes-collection.
+Themes can be found at https://github.com/newmanls/rofi-themes-collection for example.
+
+### Set cursor theme
+Install some themes from repository. For example from https://github.com/wo2ni/Oxygen-Cursors
+
+Themes can be found in /usr/share/icons
+
+Add to your .Xresources
+```
+Xcursor.theme: XXX
+```
 
  # Questions
 - normal lock screen
