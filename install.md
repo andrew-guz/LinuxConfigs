@@ -89,18 +89,19 @@ Check resolution with `hwinfo --framebuffer` or `videoinfo` from GRUB
 
 Edit `/etc/default/grub file and` and add next resolution lines:
 ```
-GRUB_GFXMODE=2560x1440x16 // your resolution here
+GRUB_GFXMODE=2560x1440x16,auto // your resolution here, auto if for error fallback
 GRUB_GFXPAYLOAD_LINUX=keep
 ```
-There also your can set wallpapper or theme in
+There also your can set wallpapper OR theme (only one of it). Wallpaper must be tga, png, 8-bit jpg.
 ```
 #GRUB_BACKGROUND="/path/to/wallpaper"
 #GRUB_THEME="/path/to/gfxtheme"
+GRUB_BACKGROUND="/boot/grub/wallpapper.jpg"
 ```
 Colors of text can be set in
 ```
-#GRUB_COLOR_NORMAL="light-blue/black"
-#GRUB_COLOR_HIGHLIGHT="light-cyan/blue"
+GRUB_COLOR_NORMAL="light-gray/black"
+GRUB_COLOR_HIGHLIGHT="white/black"
 ```
 where black means tranparent
 
