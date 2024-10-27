@@ -2,6 +2,7 @@
 - git
 - base-devel
 - nano - CLI text editor
+- hwinfo
 - mc - CLI Far Manager
 - btop- like htop but better
 - ranger - CLI file browser
@@ -55,13 +56,13 @@ xrdb ~/.Xresources
 Change '/etc/slim.conf` - numlock can be set there
 
 ### Set slim normal background and theme
-Copy any lovely theme from /usr/share/slim/themes/ and add your custom background to it
-Then change theme in /etc/slim.conf
+Copy any lovely theme from `/usr/share/slim/themes/` and add your custom background to it
+Then change theme in `/etc/slim.conf`
 
 ### Set Rofi theme
 run rofi-theme-selector FROM TERMINAL - not working right now
 
-Create ~/.config/rofi/config.rasi with content
+Create `~/.config/rofi/config.rasi` with content
 ```
 configuration {
   modes: [ combi ];
@@ -76,15 +77,35 @@ Themes can be found at https://github.com/newmanls/rofi-themes-collection for ex
 ### Set cursor theme
 Install some themes from repository. For example from https://github.com/wo2ni/Oxygen-Cursors
 
-Themes can be found in /usr/share/icons
+Themes can be found in `/usr/share/icons`
 
 Add to your .Xresources
 ```
 Xcursor.theme: XXX
 ```
 
- # Questions
+### Set GRUB resolution and theme
+Check resolution with `hwinfo --framebuffer` or `videoinfo` from GRUB
+
+Edit `/etc/default/grub file and` and add next resolution lines:
+```
+GRUB_GFXMODE=2560x1440x16 // your resolution here
+GRUB_GFXPAYLOAD_LINUX=keep
+```
+There also your can set wallpapper or theme in
+```
+#GRUB_BACKGROUND="/path/to/wallpaper"
+#GRUB_THEME="/path/to/gfxtheme"
+```
+Colors of text can be set in
+```
+#GRUB_COLOR_NORMAL="light-blue/black"
+#GRUB_COLOR_HIGHLIGHT="light-cyan/blue"
+```
+where black means tranparent
+
+Do not forget to recreate grub configuration with `grub-mkconfig -o /boot/grub/grub.cfg`
+
+# Questions
 - normal lock screen
 - git push from console
-- grub resolution
-- grub images
