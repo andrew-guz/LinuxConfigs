@@ -138,10 +138,12 @@ https://github.com/mntzrr/polybar-ipfinder
 ### Fix fornts in VSCode
 Arch specific: yay -S ttf-droid
 
+### Git in console and app without login/password
+Use ssh version and set no passpharese for the key (chck ssh keys in github and gitlab)
+
 # Questions
 - normal lock screen
 - git push from console
 - start application on special workplace in fullscreen
 - different language in each window
-- stange font in default VSCode terminal
-- program to take sceensots
+
