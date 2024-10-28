@@ -1,6 +1,8 @@
 # Programs
 - git
 - base-devel
+- cmake
+- ninja
 - nano - CLI text editor
 - hwinfo
 - mc - CLI Far Manager
@@ -11,6 +13,9 @@
 - feh - view images and set background
 - xterm
 - zsh
+- smbclient
+- cifs-utils
+- Arch specific: gvfs-smb
 - Arch specific: xorg-server
 - Arch specific: xorg-xinit
 - Arch specific: xorg-apps
@@ -20,9 +25,17 @@
 - xcompmgr - windows butify
 - nm-connection-editor - will allow to configure network
 - firefox - needed to download normal browser
+- telegram-desktop
 - Arch specific: yay
 - Arch specific: yay -S google-chrome
+
+### Work specific programs
+- Arch specific:  wireguard-tools
 - Arch specific: yay -S visual-studio-code-bin
+- Arch specific: boost
+- Arch specific: yaml-cpp
+- Arch specific: doxygen + graphviz
+- https://gitlab.softcom.su/bogdan.gulyaev/arch-repo
 
 ## How to
 
@@ -92,7 +105,7 @@ Edit `/etc/default/grub file and` and add next resolution lines:
 GRUB_GFXMODE=2560x1440x16,auto // your resolution here, auto if for error fallback
 GRUB_GFXPAYLOAD_LINUX=keep
 ```
-There also your can set wallpapper OR theme (only one of it). Wallpaper must be tga, png, 8-bit jpg.
+There also your can set wallpapper OR theme (only one of it). Wallpaper must be tga, png, 8-bit jpg. Better store wallpapper somewhere in a boot section, cause it can be separate drive.
 ```
 #GRUB_BACKGROUND="/path/to/wallpaper"
 #GRUB_THEME="/path/to/gfxtheme"
@@ -107,6 +120,15 @@ where black means tranparent
 
 Do not forget to recreate grub configuration with `grub-mkconfig -o /boot/grub/grub.cfg`
 
+### Add wiregurad connection if you have a config file
+```
+sudo nmcli con import type wireguard file PATH_TO/wg.conf
+```
+
+### Show ip and vpn in polybar
+https://github.com/mntzrr/polybar-ipfinder
+
 # Questions
 - normal lock screen
 - git push from console
+- start application on special workplace in fullscreen
