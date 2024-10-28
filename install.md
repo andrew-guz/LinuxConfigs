@@ -29,6 +29,7 @@
 - telegram-desktop
 - Arch specific: yay
 - Arch specific: yay -S google-chrome
+- Arch specific: yay -S transset-df - to have transparancy on terminal
 - unzip
 - xclip - clipboard
 - scrot (scrot -s) interactive screenshot
@@ -141,7 +142,7 @@ Arch specific: yay -S ttf-droid
 ### Git in console and app without login/password
 Use ssh version and set no passpharese for the key (chck ssh keys in github and gitlab)
 
-### set nice lock
+### Set nice lock
 For i3 see config and MOD+l.
 
 Use i3lock with -i /path/to/image.png
