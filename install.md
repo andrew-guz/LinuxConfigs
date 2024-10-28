@@ -141,9 +141,12 @@ Arch specific: yay -S ttf-droid
 ### Git in console and app without login/password
 Use ssh version and set no passpharese for the key (chck ssh keys in github and gitlab)
 
+### set nice lock
+For i3 see config and MOD+l.
+
+Use i3lock with -i /path/to/image.png
+
 # Questions
-- normal lock screen
-- git push from console
 - start application on special workplace in fullscreen
 - different language in each window
 
