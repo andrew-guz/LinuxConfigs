@@ -29,6 +29,9 @@
 - telegram-desktop
 - Arch specific: yay
 - Arch specific: yay -S google-chrome
+- unzip
+- xclip - clipboard
+- scrot (scrot -s) interactive screenshot
 
 ### Work specific programs
 - Arch specific:  wireguard-tools
@@ -38,6 +41,8 @@
 - Arch specific: doxygen + graphviz
 - https://gitlab.softcom.su/bogdan.gulyaev/arch-repo
 - Arch specific: yay -S odb libodb-boost libodb-pgsql
+- Arch specific: yay -S cmake-format
+- Arch specific: pacman -S prettier
 
 ## How to
 
