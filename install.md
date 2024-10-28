@@ -3,6 +3,7 @@
 - base-devel
 - cmake
 - ninja
+- mold
 - nano - CLI text editor
 - hwinfo
 - mc - CLI Far Manager
@@ -36,6 +37,7 @@
 - Arch specific: yaml-cpp
 - Arch specific: doxygen + graphviz
 - https://gitlab.softcom.su/bogdan.gulyaev/arch-repo
+- Arch specific: yay -S odb libodb-boost libodb-pgsql
 
 ## How to
 
@@ -128,7 +130,13 @@ sudo nmcli con import type wireguard file PATH_TO/wg.conf
 ### Show ip and vpn in polybar
 https://github.com/mntzrr/polybar-ipfinder
 
+### Fix fornts in VSCode
+Arch specific: yay -S ttf-droid
+
 # Questions
 - normal lock screen
 - git push from console
 - start application on special workplace in fullscreen
+- different language in each window
+- stange font in default VSCode terminal
+- program to take sceensots
