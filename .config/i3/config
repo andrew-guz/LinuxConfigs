@@ -196,4 +196,4 @@ smart_gaps on
 exec ~/.config/polybar/launch.sh
 
 bindsym --release Print exec ~/.config/i3/scripts/scrot.sh
-bindsym $mod+l i3lock -i ~/.config/i3/lock.png
+bindsym $mod+l exec i3lock -i ~/.config/i3/lock.png

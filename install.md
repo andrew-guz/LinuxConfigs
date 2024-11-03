@@ -30,12 +30,14 @@
 - Arch specific: yay
 - Arch specific: yay -S google-chrome
 - Arch specific: yay -S transset-df - to have transparancy on terminal
+- Arch specific: man-db
 - unzip
 - xclip - clipboard
 - scrot (scrot -s) interactive screenshot
+- pavucontrol
+- Arch specific: wireguard-tools
 
 ### Work specific programs
-- Arch specific:  wireguard-tools
 - Arch specific: yay -S visual-studio-code-bin
 - Arch specific: boost
 - Arch specific: yaml-cpp
@@ -98,6 +100,8 @@ Themes can be found at https://github.com/newmanls/rofi-themes-collection for ex
 ### Set cursor theme
 Install some themes from repository. For example from https://github.com/wo2ni/Oxygen-Cursors
 
+Arch specific: yay -Syy oxygen-cursors
+
 Themes can be found in `/usr/share/icons`
 
 Add to your .Xresources
@@ -136,16 +140,33 @@ sudo nmcli con import type wireguard file PATH_TO/wg.conf
 ### Show ip and vpn in polybar
 https://github.com/mntzrr/polybar-ipfinder
 
-### Fix fornts in VSCode
-Arch specific: yay -S ttf-droid
+### Fix fonts in VSCode
+Arch specific: yay -S ttf-droid OR sudo pacman -S ttf-droid
 
 ### Git in console and app without login/password
-Use ssh version and set no passpharese for the key (chck ssh keys in github and gitlab)
+Use ssh version and set no passpharese for the key (check ssh keys in github and gitlab)
 
 ### Set nice lock
 For i3 see config and MOD+l.
 
 Use i3lock with -i /path/to/image.png
+
+### Set QEMU
+```
+sudo pacman -S qemu-full libvirt virt-manager dnsmasq
+sudo systemctl enable/start libvirtd
+sudo usermod -aG libvirt,kvm %USER%
+sudo virsh net-start default
+sudo virsh net-autostart default
+```
+
+### Set bluetooth
+See wiki
+
+For Arch: https://wiki.archlinux.org/title/Bluetooth
+
+I used blueberry as GUI
+
 
 # Questions
 - start application on special workplace in fullscreen
