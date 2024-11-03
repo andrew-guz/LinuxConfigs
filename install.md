@@ -160,6 +160,12 @@ sudo virsh net-start default
 sudo virsh net-autostart default
 ```
 
+### Polybar scripts
+https://github.com/polybar/polybar-scripts
+
+### Polybar bluetooth
+https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/system-bluetooth-bluetoothctl
+
 ### Set bluetooth
 See wiki
 
