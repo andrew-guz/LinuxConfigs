@@ -173,6 +173,18 @@ For Arch: https://wiki.archlinux.org/title/Bluetooth
 
 I used blueberry as GUI
 
+### Set refresh rate 75Hz
+
+Create xorg.conf (X -configure from terminal with no X) and put it to /etc/xorg.conf
+
+Using `cvt 2560 1440 75` get a Modeling string and put it to xorg.conf
+
+Add next lines to Monitor section
+```
+	Modeline "2560x1440@75.00"  397.25  2560 2760 3040 3520  1440 1443 1448 1506 -hsync +vsync
+	Option "PreferredMode" "2560x1440@75.00"
+```
+
 
 # Questions
 - start application on special workplace in fullscreen
