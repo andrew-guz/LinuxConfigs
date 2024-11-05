@@ -29,7 +29,6 @@
 - telegram-desktop
 - Arch specific: yay
 - Arch specific: yay -S google-chrome
-- Arch specific: yay -S transset-df - to have transparancy on terminal
 - Arch specific: man-db
 - unzip
 - xclip - clipboard
