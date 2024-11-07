@@ -184,6 +184,8 @@ Add next lines to Monitor section
 	Option "PreferredMode" "2560x1440@75.00"
 ```
 
+### Subline:
+See https://www.sublimetext.com/docs/linux_repositories.html
 
 # Questions
 - start application on special workplace in fullscreen
