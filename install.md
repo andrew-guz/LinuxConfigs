@@ -162,15 +162,17 @@ sudo virsh net-autostart default
 ### Polybar scripts
 https://github.com/polybar/polybar-scripts
 
-### Polybar bluetooth
-https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/system-bluetooth-bluetoothctl
-
 ### Set bluetooth
 See wiki
 
 For Arch: https://wiki.archlinux.org/title/Bluetooth
 
 I used blueberry as GUI
+
+### Polybar bluetooth
+https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/system-bluetooth-bluetoothctl
+
+And I added right-click = blueberry to configure it
 
 ### Set refresh rate 75Hz
 
